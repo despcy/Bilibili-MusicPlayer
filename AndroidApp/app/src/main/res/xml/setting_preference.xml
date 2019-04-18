@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/basicSettings">
+
+        <ListPreference
+            android:defaultValue="30280"
+            android:entries="@array/SongQuality"
+            android:entryValues="@array/SongQualityValue"
+            android:icon="@drawable/ic_music_note_black_24dp"
+            android:key="songQuality"
+            android:title="@string/quality"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/PlayLoop"
+            android:entryValues="@array/PlayLoopValue"
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:key="songLoop"
+            android:title="@string/loopmode"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

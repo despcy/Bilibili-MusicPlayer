@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">BiliMusic</string>
+    <string name="menu">菜单</string>
+    <string name="SongAlbumList">歌单</string>
+    <string name="Main_TitleBar_Search">搜索</string>
+    <string name="Main_Titlebar_Dynamic">动态</string>
+    <string name="add">添加</string>
+    <string name="SongTitle">歌曲标题</string>
+    <string name="SongAuthor">Up主</string>
+    <string name="todo">TODO</string>
+    <string name="SongUnit">首</string>
+    <string name="settings">设置</string>
+    <string name="about">关于</string>
+    <string name="exit">退出</string>
+    <string name="listReplay">列表循环</string>
+    <string name="song_info">歌曲信息</string>
+    <string name="addToFavFolder">添加到收藏夹</string>
+    <string name="openInBili">在B站中打开</string>
+    <string name="repeat_all">列表循环</string>
+    <string name="repeat_single">单曲循环</string>
+    <string name="repeat_shuffle">随机播放</string>
+    <string name="login">登录</string>
+    <string name="logout">登出</string>
+
+    <string name="title_activity_about">About</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="quality">音频音质</string>
+    <string name="loopmode">循环模式</string>
+    <string name="basicSettings">基础设置</string>
+
+
+    <string-array name="SongQuality">
+        <item>高</item>
+        <item>低</item>
+    </string-array>
+    <string-array name="SongQualityValue">
+        <item>30280</item>
+        <item>30216</item>
+    </string-array>
+
+    <string-array name="PlayLoop">
+        <item>单曲循环</item>
+        <item>列表循环</item>
+        <item>随机播放</item>
+    </string-array>
+    <string-array name="PlayLoopValue">
+        <item>1</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string name="title_activity_login">Login</string>
+    <string name="origionalCreated">原创音乐</string>
+    <string name="coverSing">翻唱</string>
+    <string name="vocaloid_utau">VOCALOID·UTAU</string>
+    <string name="electrical">电音</string>
+    <string name="playInstru">演奏</string>
+    <string name="mv">MV</string>
+    <string name="live">音乐现场</string>
+    <string name="misc">音乐综合</string>
+    <string name="deleteFolder">删除收藏夹</string>
+    <string name="hideFolder">隐藏收藏夹</string>
+    <string name="newFavFolder">新建收藏夹</string>
+    <string name="create">创建</string>
+    <string name="cancel">取消</string>
+    <string name="createSuccessfully">创建成功</string>
+    <string name="deleteFolderSuccess">删除成功</string>
+    <string name="deleteSongSuccess">删除歌曲成功</string>
+    <string name="loginFirst">请先登录</string>
+    <string name="addSuccess">添加成功</string>
+    <string name="allAddSuccess">批量添加成功</string>
+    <string name="loginBeforeSync">同步收藏夹需先登录</string>
+    <string name="noInternet">无网络连接</string>
+
+
+</resources>

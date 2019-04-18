@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="java.lang.String" />
+        <import type="java.lang.Integer" />
+        <variable
+            name="avData"
+            type="net.chenxiy.bilimusic.network.biliapi.pojo.av.AvData"/>
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorWhite">
+
+        <ImageView
+            android:id="@+id/now_playing_art"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="4dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_music_tianyi"
+            app:avatar_url="@{avData.pic ?? null}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/song_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="2dp"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:text="@{avData.title ?? ``}"
+            android:textColor="@color/colorTitle"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toTopOf="@+id/playlist_button"
+            app:layout_constraintEnd_toStartOf="@+id/play_pause_button"
+            app:layout_constraintStart_toEndOf="@+id/now_playing_art" />
+
+        <TextView
+            android:id="@+id/song_author"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:text="@{avData.owner.name ?? ``}"
+            android:textColor="@color/colorSubTitle"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toStartOf="@+id/play_pause_button"
+            app:layout_constraintStart_toEndOf="@+id/now_playing_art"
+            app:layout_constraintTop_toTopOf="@+id/playlist_button" />
+
+        <ProgressBar
+            android:id="@+id/song_progress"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_gravity="top"
+            android:maxHeight="5dp"
+            android:progress="0"
+            android:tag="tint_accent_color"
+            android:progressDrawable="@drawable/secondprogressbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/playlist_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.55" />
+
+        <ImageButton
+            android:id="@+id/btn_playList"
+            android:layout_width="25dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:elevation="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/now_playing_art"
+            app:layout_constraintTop_toBottomOf="@+id/song_progress"
+            app:layout_constraintVertical_bias="0.32"
+            app:srcCompat="@drawable/ic_playlist_play_black_24dp" />
+
+        <ImageButton
+            android:id="@+id/play_pause_button"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerCrop"
+            android:tint="@color/colorTheme"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/btn_playList"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/now_playing_art"
+            app:layout_constraintTop_toBottomOf="@+id/song_progress"
+            app:srcCompat="@drawable/ic_play_arrow_black_24dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

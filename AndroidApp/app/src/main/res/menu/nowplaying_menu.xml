@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/song_info"
+            android:title="@string/song_info" />
+        <item
+            android:id="@+id/add_to_fav_folder"
+            android:title="@string/addToFavFolder" />
+        <item
+            android:id="@+id/open_in_bili"
+            android:title="@string/openInBili" />
+
+    </group>
+</menu>

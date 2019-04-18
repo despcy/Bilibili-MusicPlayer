@@ -1,0 +1,49 @@
+# 添加/删除收藏夹内容
+
+添加：
+
+https://api.bilibili.com/x/v2/fav/video/add
+
+删除:
+
+https://api.bilibili.com/x/v2/fav/video/del
+
+
+```
+POST:
+
+Header:
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: ...
+
+BODY:
+
+aid=43783589&fid=3252985&jsonp=jsonp&csrf=48bc047e993dafc8b1a9c938ee056153
+```
+
+## Success:
+
+```json
+{
+    "code": 0,
+    "message": "0",
+    "ttl": 1
+}
+
+```
+
+## Failure:
+
+```json
+{
+    "code": 11201,
+    "message": "已经收藏过了",
+    "ttl": 1
+}
+
+{
+    "code": 11202,
+    "message": "已经取消收藏了",
+    "ttl": 1
+}
+```

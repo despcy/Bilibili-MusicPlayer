@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTheme">#66CCFF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="titleBarText">#ffffffff</color>
+    <color name="colorTitle">#333333</color>
+    <color name="colorSubTitle">#888888</color>
+    <color name="colorCutLine">#CDCDCD</color>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="toolbarBackgound">#6BFFFFFF</color>
+    <color name="bilipink">#F45A8D</color>
+</resources>
