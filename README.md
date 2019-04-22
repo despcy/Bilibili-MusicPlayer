@@ -3,6 +3,8 @@
 ![License](https://img.shields.io/github/license/yangchenxi/BiliMusicPlayer.svg?style=flat-square)
 ![Star](https://img.shields.io/github/stars/yangchenxi/BiliMusicPlayer.svg?style=social)
 
+<a href="https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic"><img src="./art/playstore.png" width="256" alt="get it on googlePlaytore"></a>
+
 # BiliMusic
 
 <img src="./art/icon.png" width="128" alt="logo">
