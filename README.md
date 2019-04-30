@@ -66,7 +66,12 @@ BiliMusic是一款安卓音乐播放器，将B站音乐区Up主投稿的翻唱�
 
 [SpinnerLoading](https://github.com/lusfold/SpinnerLoading)
 
-## TODO:
+
+## TODO:（咕咕咕）
+
+- [ ] 增加对于繁體中文、English（Including ReadmeFile）、日本語的语言支持
+
+- [ ] 增加封面图片保存功能
 
 - [ ] 解决个别Flv音源返回格式无法拖动进度条的问题
 
