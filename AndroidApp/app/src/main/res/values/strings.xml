@@ -72,6 +72,7 @@
     <string name="allAddSuccess">批量添加成功</string>
     <string name="loginBeforeSync">同步收藏夹需先登录</string>
     <string name="noInternet">无网络连接</string>
+    <string name="rateMyApp">给个好评吧</string>
 
 
 </resources>

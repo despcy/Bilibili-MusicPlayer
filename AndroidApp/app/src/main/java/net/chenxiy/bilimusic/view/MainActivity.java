@@ -19,6 +19,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.Uri;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.util.Log;
@@ -131,6 +132,9 @@ public class MainActivity extends SuperActivity {
                     case R.id.nav_exit:
                         openExit();
                         break;
+                    case R.id.nav_rate:
+                        openStore();
+                        break;
                         default:
                             break;
 
@@ -230,9 +234,20 @@ public class MainActivity extends SuperActivity {
 
 
     }
+    private void openStore(){
+        String url = "https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
     private void openAbout(){
 
-        startActivity(new Intent(this,About.class));
+       // startActivity(new Intent(this,About.class));
+
+        String url = "https://github.com/yangchenxi/BiliMusicPlayer";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
     }
     private void openExit(){
         mViewModel.appMediaBrowserHelper.stopService();
