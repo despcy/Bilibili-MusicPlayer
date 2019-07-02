@@ -11,7 +11,9 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="90dp"
         android:layout_height="120dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:fitsSystemWindows="true"
+        android:windowDrawsSystemBarBackgrounds="true" >
 
         <androidx.cardview.widget.CardView
             android:layout_width="0dp"
