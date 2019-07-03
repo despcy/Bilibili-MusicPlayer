@@ -21,5 +21,15 @@
             android:title="@string/loopmode"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
+    <PreferenceCategory android:title="@string/dynamicSetting">
 
+        <ListPreference
+            android:defaultValue="7"
+            android:entries="@array/DynamicPeriod"
+            android:entryValues="@array/DynamicPeriodValue"
+            android:icon="@drawable/ic_av_timer_black_24dp"
+            android:key="dynamicPeriod"
+            android:title="@string/dynamicPeriod"
+            app:useSimpleSummaryProvider="true" />
+    </PreferenceCategory>
 </PreferenceScreen>

@@ -44,6 +44,18 @@
         <item>列表循环</item>
         <item>随机播放</item>
     </string-array>
+    <string-array name="DynamicPeriod">
+        <item>当天</item>
+        <item>三天</item>
+        <item>一周</item>
+        <item>一月</item>
+    </string-array>
+    <string-array name="DynamicPeriodValue">
+        <item>1</item>
+        <item>3</item>
+        <item>7</item>
+        <item>30</item>
+    </string-array>
     <string-array name="PlayLoopValue">
         <item>1</item>
         <item>0</item>
@@ -73,6 +85,8 @@
     <string name="loginBeforeSync">同步收藏夹需先登录</string>
     <string name="noInternet">无网络连接</string>
     <string name="rateMyApp">给个好评吧</string>
+    <string name="dynamicSetting">动态设置</string>
+    <string name="dynamicPeriod">动态周期</string>
 
 
 </resources>

@@ -1,5 +1,9 @@
 package net.chenxiy.bilimusic.datasource;
 
+import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
+
+import net.chenxiy.bilimusic.Constants;
 import net.chenxiy.bilimusic.Repository;
 import net.chenxiy.bilimusic.network.biliapi.ApiEndpointInterface;
 import net.chenxiy.bilimusic.network.biliapi.RetrofitInstance;
@@ -23,11 +27,13 @@ public class HotSongDataSource extends PageKeyedDataSource<Integer, HotSong> {
     public static MutableLiveData<String> networkStatus=new MutableLiveData<>();
     public static final int PAGE_SIZE=30;
     public static final int FIRST_PAGE=1;
-    public static final int DATE_INTERVAL=30;
+    public static int DATE_INTERVAL=7;
     public Integer cateId=0;
 
-    public HotSongDataSource(Integer cateId) {
+    public HotSongDataSource(Integer cateId,Integer dateInterval) {
         this.cateId = cateId;
+        DATE_INTERVAL= dateInterval;
+
     }
 
 
