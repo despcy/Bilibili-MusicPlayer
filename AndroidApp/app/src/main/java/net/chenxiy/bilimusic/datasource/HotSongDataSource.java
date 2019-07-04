@@ -82,8 +82,9 @@ public class HotSongDataSource extends PageKeyedDataSource<Integer, HotSong> {
                     if(response.body().getNumPages()==response.body().getPage()){
                         //end
                         callback.onResult(response.body().getHotSong(),null);
+                    }else {
+                        callback.onResult(response.body().getHotSong(), params.key + 1);
                     }
-                    callback.onResult(response.body().getHotSong(),params.key+1);
                 }
                 networkStatus.postValue("finish");
             }
