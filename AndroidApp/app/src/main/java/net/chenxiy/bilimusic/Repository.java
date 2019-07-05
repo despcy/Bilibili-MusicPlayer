@@ -2,6 +2,7 @@ package net.chenxiy.bilimusic;
 
 import android.content.Context;
 import android.util.Log;
+import android.widget.Toast;
 
 import net.chenxiy.bilimusic.database.BiliDao;
 import net.chenxiy.bilimusic.database.BiliDatabase;
@@ -34,6 +35,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class Repository {
+    public final Integer defaultAVID=17405102;//彩蛋
+
     private static final String TAG = "RepositoryLog";
     private static final Object LOCK = new Object();
     private static Repository repository=null;
@@ -307,7 +310,15 @@ public class Repository {
         }
             try {
                 Response<AvInfoResponse> response = apiService.getAvInfo(avId).execute();
+              if(response.body()==null){
+
+                  Toast.makeText(mContext,"由于触发哔哩哔哩安全风控策略，该次访问请求被拒绝。\n" +
+                          "The request was rejected because of the bilibili security control policy.   ",Toast.LENGTH_LONG);
+
+              }
+
                 avData = response.body().getAvData();
+              if(avData==null)return getAvDataFromIdMainThread(defaultAVID);
                 biliDao.insertAvData(avData);
                 return avData;
             } catch (IOException e) {

@@ -52,7 +52,7 @@ public interface BiliDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertFavSongs(List<FavSong> favSongs);
 
-    @Query("select * from favSong where fid=:fid")
+    @Query("select * from favSong where fid=:fid order by id asc")
     LiveData<List<FavSong>> getAllSongsFromFolder(Integer fid);
 
 

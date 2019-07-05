@@ -24,6 +24,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.SeekBar;
 import android.widget.Toast;
 
@@ -61,7 +62,11 @@ public class PlayingActivity extends SuperActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_playing);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
         Log.d(TAG, "onCreate: ");
         mainActivityViewModel= ViewModelProviders.of(this).get(MainActivityViewModel.class);
         mBinding= DataBindingUtil.setContentView(this,R.layout.activity_playing);
@@ -287,13 +292,13 @@ public class PlayingActivity extends SuperActivity {
 
     private void OpenInBili(){
         try {
-            String url = "bilibili://video/".concat(mainActivityViewModel.nowPlayingAvData.getValue().getAid().toString());
+            String url = "https://www.bilibili.com/video/av".concat(mainActivityViewModel.nowPlayingAvData.getValue().getAid().toString());
             Intent i = new Intent(Intent.ACTION_VIEW);
             i.setData(Uri.parse(url));
             startActivity(i);
             MainActivityViewModel.appMediaBrowserHelper.getController().getTransportControls().pause();
         }catch (Exception e){
-            Toast.makeText(this,"未找到客户端",Toast.LENGTH_SHORT);
+            Toast.makeText(this, R.string.noApp,Toast.LENGTH_SHORT);
         }
 
     }

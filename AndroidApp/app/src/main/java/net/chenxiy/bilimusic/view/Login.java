@@ -10,6 +10,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
@@ -30,6 +31,7 @@ import net.chenxiy.bilimusic.network.interceptwebclient.InterceptWebClient;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Locale;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -46,6 +48,9 @@ public class Login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        Log.d(TAG, "onCreate: LOCAL"+ Locale.getDefault().getLanguage());
+
         mWebView = (WebView) findViewById(R.id.wv_login);
 
         mSwipeRefreshLayout=findViewById(R.id.loginRefreshLayout);
@@ -94,6 +99,8 @@ public class Login extends AppCompatActivity {
                 return false;
             }
         },cssHide);
+
+
         mWebView.setWebViewClient(minterceptClient);
         mWebView.loadUrl("https://passport.bilibili.com/login");
 

@@ -25,7 +25,7 @@
             android:layout_marginBottom="4dp"
             android:contentDescription="@string/todo"
             android:scaleType="centerCrop"
-            android:src="@drawable/no_music_tianyi"
+            android:src="@drawable/album_empty"
             app:avatar_url="@{avData.pic ?? null}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="h,1:1"

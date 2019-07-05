@@ -16,6 +16,7 @@ import retrofit2.Response;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.media.MediaMetadataCompat;
@@ -71,6 +72,8 @@ public class AlbumDetailActivity extends SuperActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
         mBinding= DataBindingUtil.setContentView(this,R.layout.activity_album_detail);
         this.setSupportActionBar(mBinding.albumDetailtoolbar);
         actionBar=getSupportActionBar();
@@ -91,7 +94,8 @@ public class AlbumDetailActivity extends SuperActivity{
         }else if(type.equals(Constants.TYPE_ARTIST_FOLDER)){
             initializeArtistFolder();
         }
-
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
         setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false);//set the status bar totally tranparent
         getWindow().setStatusBarColor(Color.TRANSPARENT);

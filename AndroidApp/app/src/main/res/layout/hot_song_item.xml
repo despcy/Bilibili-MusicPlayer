@@ -69,7 +69,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="Up主:"
+        android:text="@string/Artist"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/songImage"
         app:layout_constraintTop_toTopOf="@+id/guideline8" />
@@ -80,7 +80,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="2dp"
-        android:text="标签:"
+        android:text="@string/label"
         android:textSize="10sp"
         app:layout_constraintStart_toEndOf="@+id/songImage"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -91,7 +91,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginBottom="4dp"
-        android:text="播放量:"
+        android:text="@string/click"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/songImage" />
@@ -102,7 +102,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginBottom="4dp"
-        android:text="收藏量:"
+        android:text="@string/fav"
         android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/songImage" />

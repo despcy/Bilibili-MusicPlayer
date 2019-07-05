@@ -456,7 +456,7 @@ public class MediaService extends MediaBrowserServiceCompat {//这个是一个me
             
             //add the same media as current playing
             if(mQueueIndex!=-1&&
-                    description.getMediaId()==mPlaylist.get(mQueueIndex).getDescription().getMediaId()){
+                    description.getMediaId().equals(mPlaylist.get(mQueueIndex).getDescription().getMediaId())){
                 return;
             }
             //delete the old one if the item is already in playList

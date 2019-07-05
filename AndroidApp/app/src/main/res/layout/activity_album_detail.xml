@@ -6,13 +6,13 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:windowTranslucentStatus="true"
         android:fitsSystemWindows="true"
         android:windowDrawsSystemBarBackgrounds="true">
 
         <androidx.coordinatorlayout.widget.CoordinatorLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:fitsSystemWindows="true"
             app:layout_constraintBottom_toTopOf="@+id/foot_fragment"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -84,7 +84,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout="@layout/foot_playbar" />
+            tools:layout="@layout/foot_playbar"
+            />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

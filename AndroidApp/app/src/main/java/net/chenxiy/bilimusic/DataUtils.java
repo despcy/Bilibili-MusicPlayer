@@ -113,7 +113,7 @@ public class DataUtils {
             }
             ArrayList<Integer> selectedFid=new ArrayList<>();
 
-            builder.setTitle("选择要添加到的收藏夹")
+            builder.setTitle(context.getString(R.string.SelectFolder))
 
                     .setMultiChoiceItems(arr, null, new DialogInterface.OnMultiChoiceClickListener() {
                         @Override
@@ -127,7 +127,7 @@ public class DataUtils {
                             }
                         }
                     })
-                    .setPositiveButton("确定", new DialogInterface.OnClickListener() {
+                    .setPositiveButton(context.getString(R.string.yes), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 
@@ -135,7 +135,7 @@ public class DataUtils {
 
                         }
                     })
-                    .setNegativeButton("取消", new DialogInterface.OnClickListener() {
+                    .setNegativeButton(context.getString(R.string.cancel), new DialogInterface.OnClickListener() {
                         @Override
                         public void onClick(DialogInterface dialog, int which) {
 

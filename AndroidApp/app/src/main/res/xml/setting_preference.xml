@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
+    <!--<SwitchPreference-->
+        <!--android:key="darkMode"-->
+        <!--android:defaultValue="false"-->
+        <!--android:icon="@drawable/ic_brightness_4_black_24dp"-->
+        <!--android:summaryOff="@string/off"-->
+        <!--android:summaryOn="@string/on"-->
+        <!--android:title="@string/darkmode" />-->
     <PreferenceCategory android:title="@string/basicSettings">
 
         <ListPreference
@@ -32,4 +38,8 @@
             android:title="@string/dynamicPeriod"
             app:useSimpleSummaryProvider="true" />
     </PreferenceCategory>
+
+
+
+
 </PreferenceScreen>

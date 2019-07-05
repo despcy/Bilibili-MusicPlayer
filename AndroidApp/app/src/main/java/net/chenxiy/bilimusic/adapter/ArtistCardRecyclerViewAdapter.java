@@ -48,7 +48,7 @@ public class ArtistCardRecyclerViewAdapter extends PagedListAdapter<FavSong, Art
     public static DiffUtil.ItemCallback<FavSong> DIFF_CALLBACK=new DiffUtil.ItemCallback<FavSong>() {
         @Override
         public boolean areItemsTheSame(@NonNull FavSong oldItem, @NonNull FavSong newItem) {
-            return oldItem.getOwner().getMid()==newItem.getOwner().getMid();
+            return oldItem.getOwner().getMid().equals(newItem.getOwner().getMid());
         }
 
         @Override

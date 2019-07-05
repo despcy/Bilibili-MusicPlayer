@@ -34,6 +34,7 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.Observer;
 
 public class MainActivityViewModel extends AndroidViewModel {
+    public static Boolean DarkMode=true;
     private static final String TAG = "MainActivityViewModelLog";
     private static UpdateUIBroadcastReceiver mUpdateUIBroadcastReceiver;
     private static UpdatePlayListBroadcastReceiver mUpdatePlayListBroadcastReceiver;

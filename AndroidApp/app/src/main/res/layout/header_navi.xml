@@ -56,7 +56,7 @@
                     <TextView
                         android:id="@+id/txt_List"
                         style="@style/ToolBar.Title.Normal"
-                        android:layout_width="66dp"
+                        android:layout_width="75dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif"
@@ -67,7 +67,7 @@
                     <TextView
                         android:id="@+id/txt_Search"
                         style="@style/ToolBar.Title.Normal"
-                        android:layout_width="66dp"
+                        android:layout_width="75dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif"
@@ -78,7 +78,7 @@
                     <TextView
                         android:id="@+id/txt_Dynamic"
                         style="@style/ToolBar.Title.Normal"
-                        android:layout_width="66dp"
+                        android:layout_width="75dp"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:fontFamily="sans-serif"
