@@ -1,3 +1,4 @@
+![](./art/bandage.png)
 ![Platform](https://img.shields.io/badge/platform-Android-green.svg?style=flat-square)
 [![Current Release](https://img.shields.io/github/release/yangchenxi/BiliMusicPlayer.svg?style=flat-square)](https://github.com/yangchenxi/BiliMusicPlayer/releases)
 ![License](https://img.shields.io/github/license/yangchenxi/BiliMusicPlayer.svg?style=flat-square)
@@ -5,42 +6,56 @@
 
 <a href="https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic"><img src="./art/playstore.png" width="256" alt="get it on googlePlaytore"></a>
 
-# BiliMusic
+# BiliMusic [中文](./README_CN.md)
 
 <img src="./art/icon.png" width="128" alt="logo">
 
-BiliMusic是一款安卓音乐播放器，将B站音乐区Up主投稿的翻唱，原创等视频作为音频在安卓客户端播放。还在不断完善之中，采用MVVM+LiveData+Retrofit+Exoplayer 实现。
+BiliMusic is a third-party online music player for Android. It plays the music video from Bilibili.com (Chinese Youtube) as audio and sync with your bilibili account, using MVVM+Room+LiveData+Retrofit+Exoplayer.
 
-相关Api分析自bilibili.com Web前端请求，[Api文档](./Core/Api.md)
+Since there is no official API provided by bilibili.com, I analysed the website's frontend API by myself. **[API Document](./Core/Api.md)**
 
-[相关WebView请求过滤拦截实现](./Core/WebView)
+[Here is code for WebView traffic intercept](./Core/WebView)
+
 ## Preview
 
-<img src="./art/demoo.gif" width="256" alt="logo">
+[![Click to watch Youtube Demo](./art/demoo.gif)](https://www.youtube.com/watch?v=zlTDXCNf75c)
 
 ## Feature
 
-* 用户登录
-* 同步用户收藏夹(包括私有收藏夹)
-* 自动生成按照Up主分类的播放列表
-* 添加/删除收藏夹内歌曲
-* 添加/删除收藏夹
-* 批量添加当前播放列表歌曲到用户收藏夹
-* 按热度排序浏览B站音乐区投稿
-* 搜索Up主、av号
-* 显示当前播放歌曲信息
-* 在Bilibili App中播放当前音频的原视频
-* 后台播放、锁屏控制
+* Multi-language support
+* User login
+* User mix folder sync (both public and private)
+* Auto generate playlists by the author
+* Add/Delete songs from mix folder
+* Add/Delete songs from 
+* Batch adding songs to mix folder
+* Browse the online music resource ranked by click
+* Search by author, name and id
+* Get the music detail
+* Open video of the music on bilibili.com
+* Play in background | Lock screen control
 
 ## ScreenShots
 
-| <img src="./art/screenshot1.png" width="256" alt="logo">| <img src="./art/screenshot2.png" width="256" alt="logo">|<img src="./art/screenshot3.png" width="256" alt="logo"> |
+| <img src="./art/screenshot1en.png" width="256" alt="logo">| <img src="./art/screenshot2.png" width="256" alt="logo">|<img src="./art/screenshot3.png" width="256" alt="logo"> |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="./art/screenshot4.png" width="256" alt="logo">|<img src="./art/screenshot5.png" width="256" alt="logo">|<img src="./art/screenshot6.png" width="256" alt="logo">|
+|<img src="./art/screenshot4en.png" width="256" alt="logo">|<img src="./art/screenshot5en.png" width="256" alt="logo">|<img src="./art/screenshot6.png" width="256" alt="logo">|
 
 ## Download
 
-### [Release-V1.0-Alpha 2019-04-18](https://github.com/yangchenxi/BiliMusicPlayer/releases/download/v1.0-alpha/BiliMusic.apk)
+### [Release-V2.0 2019-07-07](https://github.com/yangchenxi/BiliMusicPlayer/releases/download/2.0/BiliMusic2.0.apk)
+
+
+```
+Detail:
+
+Fix some bugs
+Add Traditional Chinese and English support
+Possibly fixed the navigation bar overlap issue
+Add feed period in settings
+```
+
+~~[Release-V1.0-Alpha 2019-04-18](https://github.com/yangchenxi/BiliMusicPlayer/releases/download/v1.0-alpha/BiliMusic.apk)~~
 
 ## Libraries
 
@@ -67,31 +82,33 @@ BiliMusic是一款安卓音乐播放器，将B站音乐区Up主投稿的翻唱�
 [SpinnerLoading](https://github.com/lusfold/SpinnerLoading)
 
 
-## TODO:（咕咕咕）
+## TODO:（Possibly...）
 
-- [ ] 增加对于繁體中文、English（Including ReadmeFile）、日本語的语言支持
+- [x] Add language support for 繁體中文、English（Including ReadmeFile）、~~日本語~~
 
-- [ ] 增加封面图片保存功能
+- [ ] Save album photo
 
-- [ ] 解决个别Flv音源返回格式无法拖动进度条的问题
+- [ ] Fix progress bar bugs for flv audio source
 
-- [ ] 美化UI
+- [ ] Beautify UI
 
-- [ ] 增加本地收藏夹功能
+- [ ] Add Local Mix Folder
 
-- [ ] 增加离线播放以及下载功能
+- [ ] Add offline mode and download function
 
-- [ ] 增加分P播放功能
+- [ ] Add bilibili page resource support
+
+- [ ] Add Dark Mode Support
 
    ...
 
-## 声明：
+## Claim：
 
-**本app通过模拟浏览器行为进行数据获取,会保存用户cookie用于api请求，相关数据将不会传送给任何第三方。**
+**This app uses cookie to save user session, all cookies will be stored in local device**
 
-**音乐版权归Bilibili所有。如果已经涉及到版权，请速与作者联系，作者将第一时间进行处理。**
+**The copyrights of all music contents belongs to Bilibili.com**
 
-**此开源项目仅做学习交流使用, 不可用于任何商业以及非法用途. 喜欢的话欢迎点赞(star)关注(follow)收藏(fork)三连。**
+**Welcome to Fork, Star, Follow, Pull Request**
 
 ## License:
 

@@ -2,9 +2,9 @@
 <resources>
     <string name="app_name">BiliMusic</string>
     <string name="menu">Menu</string>
-    <string name="SongAlbumList">Playlist</string>
+    <string name="SongAlbumList">Mix</string>
     <string name="Main_TitleBar_Search">Search</string>
-    <string name="Main_Titlebar_Dynamic">News</string>
+    <string name="Main_Titlebar_Dynamic">Feed</string>
     <string name="add">Add</string>
     <string name="SongTitle">Title</string>
     <string name="SongAuthor">Author</string>
@@ -28,7 +28,7 @@
     <string name="electrical">Electro</string>
     <string name="playInstru">Instr</string>
     <string name="live">Site</string>
-    <string name="misc">Others</string>
+    <string name="misc">Misc</string>
     <string name="deleteFolder">Delete Playlist</string>
     <string name="hideFolder">Hide PlayList</string>
     <string name="newFavFolder">New Playlist</string>
@@ -40,7 +40,7 @@
     <string name="loginFirst">Please Login First</string>
     <string name="addSuccess">Added Successfully</string>
     <string name="allAddSuccess">Batch Added Successfully</string>
-    <string name="loginBeforeSync">Login Before Sync Playlist</string>
+    <string name="loginBeforeSync">Login Before Sync Mix</string>
     <string name="noInternet">No Internet Connection</string>
     <string name="rateMyApp">Rate this App</string>
     <string name="dynamicSetting">News Setting</string>
@@ -52,7 +52,7 @@
     <string name="click">Click:</string>
     <string name="fav">Fav:</string>
     <string name="deleteSong">Delete Song</string>
-    <string name="addToFavFolder">Add To Playlist</string>
+    <string name="addToFavFolder">Add To Mix</string>
     <string name="high">High</string>
     <string name="low">Low</string>
     <string name="today">Today</string>
@@ -60,6 +60,6 @@
     <string name="week">A Week</string>
     <string name="month">A Month</string>
     <string name="noApp">Can\'t find Bilibili App!</string>
-    <string name="SelectFolder">Please Select the Playlist</string>
+    <string name="SelectFolder">Please Select the Mix</string>
     <string name="yes">OK</string>
 </resources>
