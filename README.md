@@ -16,7 +16,9 @@ Since there is no official API provided by bilibili.com, I analysed the website'
 
 [Here is code for WebView traffic intercept](./Core/WebView)
 
-## Preview
+## Preview 
+
+#### Click to watch Youtube Demo:
 
 [![Click to watch Youtube Demo](./art/demoo.gif)](https://www.youtube.com/watch?v=zlTDXCNf75c)
 
@@ -37,9 +39,9 @@ Since there is no official API provided by bilibili.com, I analysed the website'
 
 ## ScreenShots
 
-| <img src="./art/screenshot1en.png" width="256" alt="logo">| <img src="./art/screenshot2.png" width="256" alt="logo">|<img src="./art/screenshot3.png" width="256" alt="logo"> |
+| <img src="./art/Screenshot1en.png" width="256" alt="logo">| <img src="./art/screenshot2.png" width="256" alt="logo">|<img src="./art/screenshot3.png" width="256" alt="logo"> |
 |:-------------------------:|:-------------------------:|:-------------------------:|
-|<img src="./art/screenshot4en.png" width="256" alt="logo">|<img src="./art/screenshot5en.png" width="256" alt="logo">|<img src="./art/screenshot6.png" width="256" alt="logo">|
+|<img src="./art/Screenshot4en.png" width="256" alt="logo">|<img src="./art/Screenshot5en.png" width="256" alt="logo">|<img src="./art/screenshot6.png" width="256" alt="logo">|
 
 ## Download
 
