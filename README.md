@@ -29,7 +29,7 @@ Since there is no official API provided by bilibili.com, I analysed the website'
 * User mix folder sync (both public and private)
 * Auto generate playlists by the author
 * Add/Delete songs from mix folder
-* Add/Delete songs from 
+* Add/Delete mix folder
 * Batch adding songs to mix folder
 * Browse the online music resource ranked by click
 * Search by author, name and id
