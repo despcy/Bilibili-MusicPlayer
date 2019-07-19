@@ -6,6 +6,12 @@
 
 <a href="https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic"><img src="./art/playstore.png" width="256" alt="get it on googlePlaytore"></a>
 
+```
+Warning:
+This App has never been published in ANY App Store hosted in Mainland China. 
+Downloads from these websites may cause security(e.g. password stolen) and legal risks.
+```
+
 # BiliMusic [中文](./README_CN.md)
 
 <img src="./art/icon.png" width="128" alt="logo">
