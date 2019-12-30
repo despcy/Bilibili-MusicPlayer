@@ -23,7 +23,7 @@
             android:layout_marginTop="4dp"
             android:layout_marginBottom="4dp"
             android:scaleType="centerCrop"
-            app:image_url="@{folderInfo.cover[0].pic ?? null}"
+            app:image_url="@{folderInfo.cover ?? null}"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="1:1"
             app:layout_constraintEnd_toEndOf="parent"

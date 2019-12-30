@@ -12,9 +12,7 @@ public class FavFolderInfoResponse {
     @SerializedName("message")
     @Expose
     private String message;
-    @SerializedName("ttl")
-    @Expose
-    private Integer ttl;
+
     @SerializedName("data")
     @Expose
     private Data data;
@@ -35,13 +33,7 @@ public class FavFolderInfoResponse {
         this.message = message;
     }
 
-    public Integer getTtl() {
-        return ttl;
-    }
 
-    public void setTtl(Integer ttl) {
-        this.ttl = ttl;
-    }
 
     public Data getData() {
         return data;

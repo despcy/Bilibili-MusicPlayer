@@ -13,6 +13,7 @@
             android:src="@drawable/firstscreen"
             android:gravity="center|fill" />
 
+
     </item>
 
 </layer-list>

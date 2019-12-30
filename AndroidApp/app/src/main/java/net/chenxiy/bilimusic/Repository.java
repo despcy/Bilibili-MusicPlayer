@@ -79,15 +79,16 @@ public class Repository {
     public MutableLiveData<String> fetchFavFolderData(String cookie,Integer userId){
 
         final MutableLiveData<String> flag=new MutableLiveData<>();
-        apiService.getFavFolderInfo(cookie,userId)
+        apiService.getFavFolderInfo(cookie,"https://space.bilibili.com/"+String.valueOf(userId),userId)
                 .enqueue(new Callback<FavFolderInfoResponse>() {
                     @Override
                     public void onResponse(Call<FavFolderInfoResponse> call, Response<FavFolderInfoResponse> response) {
                         FavFolderInfoResponse favFolderInfoResponse=response.body();
-                        if(favFolderInfoResponse.getCode()==0){
+                        if(favFolderInfoResponse.getCode()==0&&favFolderInfoResponse.getData()!=null){
                             DiskIO.execute(new Runnable() {
                                 @Override
                                 public void run() {
+
                                     List<FolderArchive> archives=favFolderInfoResponse.getData().getFolderArchive();
                                     biliDao.deleteAllFolderArchive();
                                     biliDao.insertFavFolder(archives);
@@ -103,7 +104,7 @@ public class Repository {
 
 
                         }else{
-                            Log.d(TAG, "onResponse: error message code");
+                            Log.d(TAG, "onResponse: error message code"+favFolderInfoResponse.getCode());
                             //error handling
                             loadResourceMessager.postValue(Constants.ERROR);
                             flag.postValue(favFolderInfoResponse.getMessage());
