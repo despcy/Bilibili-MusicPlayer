@@ -6,7 +6,6 @@
 
 <a href="https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic"><img src="./art/playstore.png" width="256" alt="get it on googlePlaytore"></a>
 
-# Due To the change Of API by Bilibili official, this app is temporily removed from Google Play Store, Coming back soon...
 
 ```
 Warning:
