@@ -6,7 +6,6 @@
 
 <a href="https://play.google.com/store/apps/details?id=net.chenxiy.bilimusic"><img src="./art/playstore.png" width="256" alt="get it on googlePlaytore"></a>
 
-# 由于B站官方API改动，本App暂时下架，修复中。。。
 
 ```
 警告:
