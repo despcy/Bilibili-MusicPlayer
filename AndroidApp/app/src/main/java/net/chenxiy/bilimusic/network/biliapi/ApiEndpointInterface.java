@@ -41,9 +41,10 @@ public interface ApiEndpointInterface {
                                                @Field("jsonp") String jsonp);
 
     //get all fav folder list for a user
-    @GET("x/space/fav/nav?jsonp=jsonp")
+    @GET("/medialist/gateway/base/created?pn=1&ps=100&jsonp=jsonp")
     Call<FavFolderInfoResponse> getFavFolderInfo(@Header("Cookie") String cookie,
-                                                 @Query("mid") Integer userUid);
+                                                 @Header("Referer") String referer,
+                                                 @Query("up_mid") Integer userUid);
 
     //get the content of a fav folder
     @GET("x/space/fav/arc?jsonp=jsonp&ps=30")

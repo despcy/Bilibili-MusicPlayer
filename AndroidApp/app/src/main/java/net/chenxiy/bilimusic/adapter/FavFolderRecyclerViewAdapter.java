@@ -117,7 +117,7 @@ public class FavFolderRecyclerViewAdapter extends RecyclerView.Adapter<FavFolder
             intent.putExtra(AlbumDetailActivity.CAPTION,favFolder.getName());
             intent.putExtra(AlbumDetailActivity.ID,favFolder.getFid());
             if(favFolder.getCover()!=null) {
-                intent.putExtra(AlbumDetailActivity.HEADER_PIC, favFolder.getCover().get(0).getPic());
+                intent.putExtra(AlbumDetailActivity.HEADER_PIC, favFolder.getCover());
             }
             v.getContext().startActivity(intent);
         }

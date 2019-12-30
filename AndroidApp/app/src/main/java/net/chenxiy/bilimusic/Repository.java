@@ -79,7 +79,7 @@ public class Repository {
     public MutableLiveData<String> fetchFavFolderData(String cookie,Integer userId){
 
         final MutableLiveData<String> flag=new MutableLiveData<>();
-        apiService.getFavFolderInfo(cookie,userId)
+        apiService.getFavFolderInfo(cookie,"https://space.bilibili.com/"+String.valueOf(userId),userId)
                 .enqueue(new Callback<FavFolderInfoResponse>() {
                     @Override
                     public void onResponse(Call<FavFolderInfoResponse> call, Response<FavFolderInfoResponse> response) {

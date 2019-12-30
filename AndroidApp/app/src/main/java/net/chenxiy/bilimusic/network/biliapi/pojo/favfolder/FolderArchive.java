@@ -4,6 +4,7 @@ package net.chenxiy.bilimusic.network.biliapi.pojo.favfolder;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import androidx.room.Entity;
@@ -14,7 +15,7 @@ import androidx.room.PrimaryKey;
 @Entity(tableName = "folderArchive")
 public class FolderArchive {
 
-    @SerializedName("media_id")
+    @SerializedName("id")
     @Expose
     private Integer mediaId;
     @PrimaryKey
@@ -24,33 +25,17 @@ public class FolderArchive {
     @SerializedName("mid")
     @Expose
     private Integer mid;
-    @SerializedName("name")
+    @SerializedName("title")
     @Expose
     private String name;
-    @SerializedName("max_count")
-    @Expose
-    private Integer maxCount;
-    @SerializedName("cur_count")
+
+    @SerializedName("media_count")
     @Expose
     private Integer curCount;
-    @SerializedName("atten_count")
-    @Expose
-    private Integer attenCount;
-    @SerializedName("favoured")
-    @Expose
-    private Integer favoured;
-    @SerializedName("state")
-    @Expose
-    private Integer state;
-    @SerializedName("ctime")
-    @Expose
-    private Integer ctime;
-    @SerializedName("mtime")
-    @Expose
-    private Integer mtime;
+
     @SerializedName("cover")
     @Expose
-    private List<Cover> cover = null;
+    private String cover;
 
     public Integer getMediaId() {
         return mediaId;
@@ -84,12 +69,12 @@ public class FolderArchive {
         this.name = name;
     }
 
-    public Integer getMaxCount() {
-        return maxCount;
+    public String getCover() {
+        return cover;
     }
 
-    public void setMaxCount(Integer maxCount) {
-        this.maxCount = maxCount;
+    public void setCover(String cover) {
+        this.cover = cover;
     }
 
     public Integer getCurCount() {
@@ -99,53 +84,4 @@ public class FolderArchive {
     public void setCurCount(Integer curCount) {
         this.curCount = curCount;
     }
-
-    public Integer getAttenCount() {
-        return attenCount;
-    }
-
-    public void setAttenCount(Integer attenCount) {
-        this.attenCount = attenCount;
-    }
-
-    public Integer getFavoured() {
-        return favoured;
-    }
-
-    public void setFavoured(Integer favoured) {
-        this.favoured = favoured;
-    }
-
-    public Integer getState() {
-        return state;
-    }
-
-    public void setState(Integer state) {
-        this.state = state;
-    }
-
-    public Integer getCtime() {
-        return ctime;
-    }
-
-    public void setCtime(Integer ctime) {
-        this.ctime = ctime;
-    }
-
-    public Integer getMtime() {
-        return mtime;
-    }
-
-    public void setMtime(Integer mtime) {
-        this.mtime = mtime;
-    }
-
-    public List<Cover> getCover() {
-        return cover;
-    }
-
-    public void setCover(List<Cover> cover) {
-        this.cover = cover;
-    }
-
 }
