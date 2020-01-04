@@ -312,9 +312,10 @@ public class Repository {
             try {
                 Response<AvInfoResponse> response = apiService.getAvInfo(avId).execute();
               if(response.body()==null){
+                               Toast.makeText(mContext,"由于触发哔哩哔哩安全风控策略，该次访问请求被拒绝。\n" +
+                        "The request was rejected because of the bilibili security control policy.   ",Toast.LENGTH_LONG);
+                   return null;
 
-                  Toast.makeText(mContext,"由于触发哔哩哔哩安全风控策略，该次访问请求被拒绝。\n" +
-                          "The request was rejected because of the bilibili security control policy.   ",Toast.LENGTH_LONG);
 
               }
 
